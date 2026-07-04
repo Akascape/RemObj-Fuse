@@ -1,7 +1,7 @@
 # RemObj-Fuse
 
 ## 🎬 **Automatic Object Remover for DaVinci Resolve Fusion**  
-Free and open-source plugin that integrates the power of [LaMa (Resolution-robust Large Mask Inpainting)](https://github.com/advimman/lama) into Fusion workflows for seamless object removal.
+Free and open-source plugin that integrates the power of [LaMa](https://github.com/advimman/lama) (Resolution-robust Large Mask Inpainting) into Fusion workflows for seamless object removal.
 
 <img width="1917" height="845" alt="image" src="https://github.com/user-attachments/assets/c032687e-37e8-486a-880b-fe528ff72bc2" />
 
