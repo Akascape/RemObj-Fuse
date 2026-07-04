@@ -61,7 +61,7 @@ For more details, visit the LaMa repo: https://github.com/advimman/lama
 
 ## 🪄 Video Demo
 
-[<img src="https://img.youtube.com/vi/Lv8DGq7qbx4/0.jpg" width=40% height=40%>](https://youtu.be/Lv8DGq7qbx4)
+To be uploaded soon!
 
 ## 🌱 Overview
 
