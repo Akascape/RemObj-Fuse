@@ -30,9 +30,7 @@ Free and open-source plugin that integrates the power of [LaMa (Resolution-robus
 9. The output will be displayed through the media out (if connected)
     
 ### ⮞ Automatic Setup for beginners [[RemObj_Manager](https://github.com/Akascape/RemObj-Fuse/blob/main/RemObj/remobj_manager.py)]
-An easy-to-use Python application has been developed to simplify the RemObj setup. Just open the `remobj_manager.py` file—either directly in Python or via the Fuse interface — and follow the installation steps.
-
-<br> ![demo_remobj_manager](https://github.com/user-attachments/assets/a5de323e-6bf9-4823-ba59-fb7e29ddad65)
+An easy-to-use Python application has been developed to simplify the RemObj setup. Just open the `remobj_manager.py` file, either directly in Python or via the Fuse interface and follow the installation steps.
 
 <details> 
 <summary><span style="font-size:1.25em"><strong>Or Setup Manually</strong></span></summary>
