@@ -49,7 +49,7 @@ pip install onnxruntime opencv-python numpy pillow
 pip install onnxruntime-gpu opencv-python numpy pillow
 ```
 
-* Make sure the LaMa model file `lama_fp32.onnx` is placed inside the `RemObj` folder.
+* Make sure the LaMa model file `lama_sim_fp32.onnx` is placed inside the `RemObj` folder.
 <br> For fixing issues, check this page: [wiki](https://github.com/Akascape/RemObj-Fuse/wiki/Troubleshooting-Guide)
 </details> 
 
