@@ -20,7 +20,7 @@ Free and open-source plugin that integrates the power of [LaMa](https://github.c
 
 ## ⚙️ How to Install
 
-1. First install the python3 from [www.python.org](https://www.python.org). Version Requirement: `python: >=3.11, <3.14`
+1. First install the python3 from [www.python.org](https://www.python.org).
 2. Download/Clone the RemObj-Fuse Repo
 3. Paste the `RemObj` folder in the fuse plugin directory of Resolve. [Know How](https://youtube.com/shorts/OFHyc48WOqc?feature=shared)
 4. Follow the RemObj setup, either using `remobj_manager.py` or install manually.
