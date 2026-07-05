@@ -62,7 +62,7 @@ Model downloaded from [Carve/LaMa-ONNX](https://huggingface.co/Carve/LaMa-ONNX/t
 
 ## 🪄 Video Demo
 
-To be uploaded soon!
+[<img src="https://img.youtube.com/vi/jTyiNB1VSXQ/0.jpg" width=40% height=40%>](https://youtu.be/jTyiNB1VSXQ)
 
 ## 🌱 Overview
 
