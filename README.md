@@ -27,7 +27,7 @@ Free and open-source plugin that integrates the power of [LaMa](https://github.c
 4. Follow the RemObj setup, either using `remobj_manager.py` or install manually.
 5. Open the Fusion page in DaVinci Resolve
 6. Search for the RemObj plugin in the node menu (_Shift+Spacebar_)
-7. Connect the main footage to the main input (Orange/Yellow) and the mask to the secondary input (Green)
+7. Connect the main footage to the main input (Yellow) and the mask to the secondary input (Green)
 8. Let the plugin do its work
 9. The output will be displayed through the media out (if connected)
     
