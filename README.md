@@ -54,9 +54,9 @@ pip install onnxruntime-gpu opencv-python numpy pillow
 </details> 
 
 ## 📦 Available Models
-| Model Name             | Description                                                         | Estimated Download Size      |
+| Model Name             | Description                                                         | Estimated Size      |
 |------------------------|---------------------------------------------------------------------|------------------------------|
-| lama_sim_fp32.onnx     | Standard and simplified LaMa (Large Mask Inpainting) model for object removal      | 208 MB                       |
+| lama_sim_fp32.onnx     | Standard and simplified LaMa (Large Mask Inpainting) model for object removal      | 201 MB                       |
 
 For more details, visit the LaMa repo: https://github.com/advimman/lama
 
