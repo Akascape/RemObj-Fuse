@@ -22,7 +22,7 @@ Free and open-source plugin that integrates the power of [LaMa](https://github.c
 ## ⚙️ How to Install
 
 1. First install the python3 from [www.python.org](https://www.python.org).
-2. Download/Clone the RemObj-Fuse Repo
+2. Download the RemObj Plugin Files.
 3. Paste the `RemObj` folder in the fuse plugin directory of Resolve. [Know How](https://youtube.com/shorts/OFHyc48WOqc?feature=shared)
 4. Follow the RemObj setup, either using `remobj_manager.py` or install manually.
 5. Open the Fusion page in DaVinci Resolve
