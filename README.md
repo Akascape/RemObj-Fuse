@@ -15,7 +15,8 @@ Free and open-source plugin that integrates the power of [LaMa](https://github.c
 
 ## ⬇️ Download
 
-### [<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Akascape/RemObj-Fuse?&color=white&label=Download%20Source%20Code&logo=Python&logoColor=yellow&style=for-the-badge"  width="400">](https://github.com/Akascape/RemObj-Fuse/archive/refs/heads/main.zip)
+### [<img alt="Download Source Code" src="https://img.shields.io/badge/Download%20Plugin-181%20MB-white?logo=python&logoColor=yellow&style=for-the-badge" width="400">](https://github.com/Akascape/RemObj-Fuse/releases/download/dist/RemObj.zip)
+
 <br> _Don't forget to leave a_ ⭐
 
 ## ⚙️ How to Install
