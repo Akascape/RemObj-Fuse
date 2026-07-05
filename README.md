@@ -78,7 +78,7 @@ To be uploaded soon!
 ## 🐞 Debugging
 
 To view plugin logs and troubleshoot issues, open the console through `Fusion page ⮞ Workspace ⮞ Console`. Make sure not to check the `Disable Logging` option in the fuse.
-<br>📙 Here is full troubleshooting guide you can follow: [wiki](https://github.com/Akascape/RemOBJ-Fuse/wiki/Troubleshooting-Guide)
+<br>📙 Here is full troubleshooting guide you can follow: [wiki](https://github.com/Akascape/RemObj-Fuse/wiki/Troubleshooting-Guide)
 
 ## 🚧 Planned Improvements
 - Streamline Python Script Execution on Windows. Eliminate the disruptive console popup by implementing a cleaner method to trigger the processing script. Maybe consider using `comp:DoAction()` or `comp:Execute()` for a more integrated Fusion workflow.
