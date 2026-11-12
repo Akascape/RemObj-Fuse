@@ -2,15 +2,15 @@
 Fuse Plugin for DaVinci Resolve
 --------------------------------------------------------------
 Fuse Name: Remobj
-Date Created: 2026-07-04
-Fuse Version: 0.1
+Date Created: 2026-11-12
+Fuse Version: 0.2
 Author: Akascape
 Fuse Category: Effect
 Description: Object Removal/Inpainting using LaMa ONNX model
 --------------------------------------------------------------
 --]]--
 
-version = 0.1
+version = 0.2
 fuse_data = [=[
 This is a Fuse for DaVinci Resolve that uses the LaMa ONNX model to remove/inpaint objects from images.
 
@@ -71,7 +71,7 @@ function Create()
     InMask = self:AddInput("Mask", "Mask", {
         LINKID_DataType = "Image",
         LINK_Main = 2,
-        INP_Required = true,
+        INP_Required = false,
     })
 
     InLabel = self:AddInput(Logo_Image, "Label", {
@@ -127,36 +127,6 @@ function Create()
         INPID_InputControl = "ButtonControl",
         INP_External = false,
         INP_Passive = true,
-        BTNCS_Execute  = [=[
-        local setupPath = comp:MapPath('Fuses:/RemObj/remobj_manager.py')
-        print("Running script: "..setupPath)
-
-        local command
-        local isWindows = os.getenv("OS") and string.find(os.getenv("OS"), "Windows")
-        local isMac = jit and jit.os == "OSX"
-        local isLinux = not isWindows and not isMac
-
-        local pythonpath = tool:GetData("python_path")
-        local default_py = tool:GetData("default_pyexe") or "python"
-        local pyexe = pythonpath and pythonpath:match("%S+") or default_py
-        if pyexe == "pythonw" and default_py == "python" then
-            pyexe = "python"
-        end
-
-        if isWindows then
-            command = 'start /B /MIN '.. pyexe .. ' "' .. setupPath .. '"'
-        elseif isMac then
-            command = '/bin/zsh -l -c "' .. pyexe .. ' \\"' .. setupPath .. '\\""'
-        elseif isLinux then
-            command = pyexe .. ' "' .. setupPath .. '"'
-        end
-        
-        if setupPath then
-            os.execute(command)
-        else
-            print("Setup file not found at: " .. setupPath)
-        end
-        ]=],
         INP_DoNotifyChanged = true,
     })
 
@@ -239,6 +209,39 @@ function NotifyChanged(inp, param, time)
             self:SetData("python_path", param.Value)
         end
     end
+
+    if inp == InSetup then
+        if param.Value == 1 then
+            local setupPath = self.Comp:MapPath('Fuses:/RemObj/remobj_manager.py')
+            print("Running script: "..setupPath)
+
+            local command
+            local isWindows = os.getenv("OS") and string.find(os.getenv("OS"), "Windows")
+            local isMac = jit and jit.os == "OSX"
+            local isLinux = not isWindows and not isMac
+
+            local pythonpath = self:GetData("python_path")
+            local default_py = self:GetData("default_pyexe") or "python"
+            local pyexe = pythonpath and pythonpath:match("%S+") or default_py
+            if pyexe == "pythonw" and default_py == "python" then
+                pyexe = "python"
+            end
+
+            if isWindows then
+                command = 'start /B /MIN '.. pyexe .. ' "' .. setupPath .. '"'
+            elseif isMac then
+                command = '/bin/zsh -l -c "' .. pyexe .. ' \\"' .. setupPath .. '\\""'
+            elseif isLinux then
+                command = pyexe .. ' "' .. setupPath .. '"'
+            end
+            
+            if setupPath then
+                os.execute(command)
+            else
+                print("Setup file not found at: " .. setupPath)
+            end
+        end
+    end
 end
 
 logging_off = 0
@@ -284,6 +287,7 @@ function Process(req)
             src1 = ProcessWithPython(src1, mask, pythonScriptPath, req.Time)
             InProgress:SetSource(Text("[COMPLETE] Frame "..req.Time),0,0)
         else
+            print("Please connect a mask in the green channel")
             InProgress:SetSource(Text("[WAITING] Connect Mask"),0,0)
         end
     else
