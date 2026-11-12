@@ -66,7 +66,7 @@ Model downloaded from [Carve/LaMa-ONNX](https://huggingface.co/Carve/LaMa-ONNX/t
 
 ## 🌱 Overview
 
-| Fuse Version                   | 0.1                           |
+| Fuse Version                   | 0.2                           |
 |:-------------------------------|:------------------------------|
 | Script Version                 | 0.1                           |
 | Setup Version                  | 1.0                           |
